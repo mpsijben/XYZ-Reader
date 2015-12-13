@@ -91,7 +91,7 @@
             </com.example.xyzreader.ui.MaxWidthLinearLayout>
         </FrameLayout>
     </com.example.xyzreader.ui.ObservableScrollView>
-    
+
     <android.support.design.widget.FloatingActionButton
         app:fabSize="normal"
         app:elevation="@dimen/fab_elevation"
