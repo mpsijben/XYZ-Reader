@@ -135,8 +135,13 @@ public class ArticleListActivity extends AppCompatActivity implements
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    startActivity(new Intent(Intent.ACTION_VIEW,
-                            ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
+                    Intent intent = new Intent(Intent.ACTION_VIEW,
+                            ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition())));
+
+                   // final View photo = findViewById(R.id.thumbnail);
+                  //  ActivityOptionsCompat options = ActivityOptionsCompat.
+                            //makeSceneTransitionAnimation(getParent(), view, "profile");
+                    startActivity(intent);
                 }
             });
             return vh;
